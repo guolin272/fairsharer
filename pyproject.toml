@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fairsharer"
+version = "0.1.0"
+description = "Fair Sharing Algorithm"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Guohua Lin", email = "guohua.lin@study.hs-duesseldorf.de" }
+]
+
+dependencies = [
+    "numpy", 
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
